@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <select id="quizTopic">
+  <option value="">Select Topic</option>
+  <option value="General Knowledge">General Knowledge</option>
+  <option value="Science">Science</option>
+  <option value="Maths">Maths</option>
+  <option value="Technology">Technology</option>
+</select>
+
+<header class="navbar">
+  <div class="logo">QuizMaker</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="browse.html">Browse Quizzes</a>
+    <a class="btn" href="create.html">+ Create Quiz</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Create a Quiz</h2>
+  <p>Build an engaging quiz with multiple-choice questions</p>
+
+  <div class="card">
+    <input id="quizTitle" placeholder="Quiz Title" />
+    <textarea id="quizDesc" placeholder="Description (optional)"></textarea>
+  </div>
+
+  <div id="questions"></div>
+
+  <button onclick="addQuestion()" class="btn outline">+ Add Question</button>
+  <button onclick="saveQuiz()" class="btn primary">Create Quiz</button>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
